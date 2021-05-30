@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pregnancies"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Number of pregnancies"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ptv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:text="Number of Pregnancies"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/pregnancies"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/glucose"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Glucose lvl"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregnancies" />
+    <EditText
+        android:id="@+id/bp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your blood pressure"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glucose" />
+    <EditText
+        android:id="@+id/st"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter skin thickness lvl"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bp" />
+    <EditText
+        android:id="@+id/insulin"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your insulin lvl"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/st" />
+    <EditText
+        android:id="@+id/bmi"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your bmi"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insulin" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter your age"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dpf" />
+
+    <TextView
+        android:id="@+id/glucosetv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Glucose lvl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/glucose"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptv" />
+
+    <TextView
+        android:id="@+id/bptv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:text="Blood Pressure lvl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bp"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glucosetv" />
+
+    <TextView
+        android:id="@+id/sttv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:text="Skin thickness"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/st"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bptv" />
+
+    <TextView
+        android:id="@+id/insulintv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:text="Insulin lvl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/insulin"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sttv" />
+
+    <TextView
+        android:id="@+id/bmitv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:text="BMI"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bmi"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insulintv" />
+
+    <TextView
+        android:id="@+id/dpftv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:text="DPF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dpf"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmitv" />
+
+    <TextView
+        android:id="@+id/agetv"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:text="Age"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/age"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dpftv" />
+
+    <EditText
+        android:id="@+id/dpf"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your dpf factor"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="sendData"
+        android:text="Predict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agetv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
